@@ -1,4 +1,4 @@
-package httpd
+package chikit
 
 import (
 	"net/http"
