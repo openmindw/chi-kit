@@ -1,4 +1,4 @@
-module httpd
+module github.com/openmindw/chi-kit
 
 go 1.21
 
