@@ -115,3 +115,7 @@ func Patch(pattern string, handlerFn http.HandlerFunc) {
 	router.Patch(pattern, handlerFn)
 
 }
+
+func URLParam(r *http.Request, key string) string {
+	return chi.URLParam(r, key)
+}

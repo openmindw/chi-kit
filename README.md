@@ -44,7 +44,7 @@ func main() {
 	// 3. Route group
 	chikit.Route("/api/v1", func(r chi.Router) {
 		r.Get("/users/{id}", func(w http.ResponseWriter, r *http.Request) {
-			id := chi.URLParam(r, "id")
+			id := chikit.URLParam(r, "id")
 			chikit.SendSuccess(w, map[string]string{
 				"id":   id,
 				"name": "User " + id,
